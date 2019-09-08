@@ -1,0 +1,205 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  color: #757575;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.clear:after {
+  content: ' ';
+  display: table;
+  clear: both;
+  visibility: hidden;
+}
+
+.wrap {
+  width: 100%;
+  min-height: 100vh;
+  background: #107896;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.wrap.fade-in-wrap {
+  background: #c2571a;
+}
+.wrap.fade-in-bottom {
+  background: #093145;
+}
+.wrap.fade-in-top {
+  background: #9a2617;
+}
+.wrap h1 {
+  width: 100%;
+  font-size: 48px;
+  text-align: center;
+  padding: 40px 0px;
+  text-transform: uppercase;
+}
+.wrap ul {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.wrap ul li {
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.wrap .slide-in-left li {
+  position: relative;
+  cursor: pointer;
+}
+.wrap .slide-in-left li:before {
+  position: absolute;
+  content: ' ';
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 0;
+  background: #fff;
+  transition: all .4s ease-in-out;
+}
+.wrap .slide-in-left li:hover:before {
+  height: 30px;
+  top: 50%;
+  margin-top: -15px;
+}
+.wrap .fade-in-list li {
+  position: relative;
+  cursor: pointer;
+}
+.wrap .fade-in-list li:before {
+  content: ' ';
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all .4s ease-in-out;
+}
+.wrap .fade-in-list li:hover:before {
+  opacity: 1;
+  top: 50%;
+  margin-top: -5px;
+}
+.wrap .fade-in-btm li {
+  position: relative;
+  cursor: pointer;
+}
+.wrap .fade-in-btm li:before {
+  content: ' ';
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all .4s ease-in-out;
+}
+.wrap .fade-in-btm li:hover:before {
+  opacity: 1;
+  left: 50%;
+  margin-left: -5px;
+}
+.wrap .fade-in-top li {
+  position: relative;
+  cursor: pointer;
+}
+.wrap .fade-in-top li:before {
+  content: ' ';
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all .4s ease-in-out;
+}
+.wrap .fade-in-top li:hover:before {
+  opacity: 1;
+  left: 50%;
+  margin-left: -5px;
+}
+
+/*# sourceMappingURL=style.css.map */

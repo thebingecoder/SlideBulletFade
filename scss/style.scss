@@ -1,0 +1,171 @@
+@import 'reset';
+@import 'variables';
+@import 'global';
+
+
+.wrap{
+  width: 100%;
+  min-height: 100vh;
+  background: $light-blue-bg;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  &.fade-in-wrap{
+    background: $orange-bg;
+  }
+
+  &.fade-in-bottom{
+    background: $dark-blue-bg;
+  }
+
+  &.fade-in-top{
+    background: $red-bg;
+  }
+  
+  h1{
+    width: 100%;
+    font-size: 48px;
+    text-align:center;
+    padding: 40px 0px;
+    text-transform: uppercase;
+  }
+  
+  ul {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    
+    li{
+      display: inline-block;
+      padding: 20px;
+      margin: 20px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+  }
+
+  .slide-in-left{
+
+    li{
+      position: relative;
+      cursor: pointer;
+
+      &:before{
+        position: absolute;
+        content: ' ';
+        left: 0;
+        top: 0;
+        width: 5px;
+        height: 0;
+        background: #fff;
+        transition: all .4s ease-in-out;
+      }
+    }
+
+    li:hover{
+
+      &:before{
+        height: 30px;
+        top: 50%;
+        margin-top: -15px;
+      }
+
+    }
+  }
+
+  .fade-in-list{
+
+    li{
+      position: relative;
+      cursor: pointer;
+
+      &:before{
+        content: ' ';
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transition: all .4s ease-in-out;
+      }
+    }
+
+    li:hover{
+      
+      &:before{
+        opacity: 1;
+        top: 50%;
+        margin-top: -5px;
+      }
+    }
+  }
+
+  .fade-in-btm{
+
+    li{
+      position: relative;
+      cursor: pointer;
+
+      &:before{
+        content: ' ';
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: all .4s ease-in-out;
+      }
+    }
+
+    li:hover{
+      
+      &:before{
+        opacity: 1;
+        left: 50%;
+        margin-left: -5px;
+      }
+    }
+  }
+
+  .fade-in-top{
+
+    li{
+      position: relative;
+      cursor: pointer;
+
+      &:before{
+        content: ' ';
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transition: all .4s ease-in-out;
+      }
+    }
+
+    li:hover{
+      
+      &:before{
+        opacity: 1;
+        left: 50%;
+        margin-left: -5px;
+      }
+    }
+  }
+}
+
+

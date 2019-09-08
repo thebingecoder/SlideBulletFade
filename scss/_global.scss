@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+}
+
+body,html{
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+  color: $text-color;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.container{
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.clear:after{
+  content: ' ';
+  display: table;
+  clear:both;
+  visibility: hidden;
+}
